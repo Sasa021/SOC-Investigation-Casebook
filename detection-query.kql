@@ -46,3 +46,16 @@ FailedSignIns
     Device
 | order by FailedAttempts desc, SuccessTime desc
 
+TimeGenerated,UserPrincipalName,IPAddress,ResultType,ResultDescription,Location,AppDisplayName,ClientAppUsed,DeviceDetail
+2026-07-28T08:00:11Z,analyst@contoso.example,203.0.113.77,50126,Invalid username or password,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
+2026-07-28T08:01:03Z,analyst@contoso.example,203.0.113.77,50126,Invalid username or password,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
+2026-07-28T08:02:14Z,analyst@contoso.example,203.0.113.77,50126,Invalid username or password,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
+2026-07-28T08:03:29Z,analyst@contoso.example,203.0.113.77,50126,Invalid username or password,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
+2026-07-28T08:04:42Z,analyst@contoso.example,203.0.113.77,50126,Invalid username or password,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
+2026-07-28T08:05:38Z,analyst@contoso.example,203.0.113.77,50126,Invalid username or password,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
+2026-07-28T08:06:51Z,analyst@contoso.example,203.0.113.77,50126,Invalid username or password,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
+2026-07-28T08:08:06Z,analyst@contoso.example,203.0.113.77,50126,Invalid username or password,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
+2026-07-28T08:09:24Z,analyst@contoso.example,203.0.113.77,0,Success,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
+2026-07-28T08:20:09Z,analyst@contoso.example,198.51.100.24,0,Success,Cape Town ZA,Microsoft 365,Mobile Apps and Desktop clients,Managed iOS device
+
+
