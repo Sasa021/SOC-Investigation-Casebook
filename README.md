@@ -1,13 +1,13 @@
 # SOC Investigation Casebook
 
-A practical portfolio of security incidents demonstrating alert triage, KQL analysis, evidence handling, incident classification, MITRE ATT&CK mapping, and response recommendations.
+A practical portfolio of security incidents demonstrating alert triage, KQL analysis, evidence handling, incident classification, MITRE ATT&CK mapping and response recommendations.
 
-This repository presents my investigation process: establish the facts, test competing explanations, document decisions, and recommend proportionate action. All evidence is synthetic and safe to publish.
+This repository presents my investigation process: establish the facts, test competing explanations, document decisions and recommend proportionate action. All evidence is synthetic and safe to publish.
 
 ## Author
 
 **Mosa Mofokeng**  
-Emerging Cybersecurity proffesional focused on SOC operations, threat detection, incident response, Microsoft Sentinel, and governance, risk and compliance.
+Emerging Cybersecurity proffesional focused on SOC operations, threat detection, incident response, Microsoft Sentinel and governance, risk and compliance.
 
 - GitHub: [Sasa021](https://github.com/Sasa021)
 - LinkedIn: [www.linkedin.com/in/mosa-m-159919264]
@@ -37,28 +37,28 @@ Key outputs:
 
 1. Validate the alert and evidence source.
 2. Establish a timeline and baseline.
-3. Correlate identity, source, location, device, and result data.
+3. Correlate identity, source, location, device and result data.
 4. Consider benign and malicious explanations.
 5. Determine disposition and severity.
 6. Map observed behaviour to MITRE ATT&CK.
-7. Recommend containment, eradication, recovery, and improvements.
+7. Recommend containment, eradication, recovery and improvements.
 
 ## Skills demonstrated
 
-- Microsoft Sentinel-style KQL
-- Microsoft Entra sign-in log analysis
+- Microsoft Sentinel style KQL
+- Microsoft Entra sign in log analysis
 - Alert triage and incident classification
 - Timeline reconstruction and evidence-based reasoning
-- Identity and access-control analysis
+- Identity and access control analysis
 - MITRE ATT&CK mapping
-- Risk-based containment and recovery recommendations
+- Risk based containment and recovery recommendations
 - Clear technical and management reporting
 
 ## Responsible-use statement
 
-This is a defensive portfolio project. Names, domains, addresses, identifiers, and events are mostly fictional. The IP ranges use documentation-only address space. No credentials, live targets, customer information, or confidential employer data are included.
+This is a defensive portfolio project. Names, domains, addresses, identifiers and events are mostly fictional. The IP ranges use documentation only address space. No credentials, live targets, customer information or confidential employer data are included.
 
 ## Disclaimer
 
-This independent project is aligned to publicly available certification objectives. It is not endorsed by, affiliated with, or an official training product of Microsoft, ISC2, or MITRE.
+This independent project is aligned to publicly available certification objectives. It is not endorsed by, affiliated with or an official training product of Microsoft, ISC2 or MITRE.
 **Created and maintained by Mosa Mofokeng**
