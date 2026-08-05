@@ -48,7 +48,7 @@ Key outputs:
 
 ## Responsible-use statement
 
-This is a defensive portfolio project. Names, domains, addresses, identifiers, and events are fictional. The IP ranges use documentation-only address space. No credentials, live targets, customer information, or confidential employer data are included.
+This is a defensive portfolio project. Names, domains, addresses, identifiers, and events are mostly fictional. The IP ranges use documentation-only address space. No credentials, live targets, customer information, or confidential employer data are included.
 
 ## Disclaimer
 
