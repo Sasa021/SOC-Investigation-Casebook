@@ -16,7 +16,7 @@ Emerging Cybersecurity proffesional focused on SOC operations, threat detection,
 
 | Case | Scenario | Status | Core capabilities |
 |---|---|---|---|
-|| [01](case-01-brute-force/investigation.md) | Password spray followed by a successful sign-in | Complete | KQL, identity analysis, incident response, access control |
+|[01]|(case-01-brute-force/investigation.md) | Password spray followed by a successful sign-in | Complete | KQL, identity analysis, incident response, access control |
 | 02 | Phishing email investigation | Planned | Header analysis, IOC extraction, user protection |
 | 03 | Suspicious PowerShell activity | Planned | Process analysis, endpoint response, ATT&CK mapping |
 | 04 | Impossible-travel alert | Planned | Identity investigation, false-positive analysis, account remediation |
