@@ -1,51 +1,3 @@
-// Portfolio query: detect repeated sign-in failures followed by success.
-// Tune thresholds and exclusions against the organisation's baseline.
-let Lookback = 24h;
-let FailureThreshold = 5;
-let SuccessWindow = 30m;
-let FailedSignIns = materialize(
-    SigninLogs
-    | where TimeGenerated >= ago(Lookback)
-    | where ResultType != 0
-    | summarize
-        FailedAttempts = count(),
-        FirstFailure = min(TimeGenerated),
-        LastFailure = max(TimeGenerated),
-        FailureResultTypes = make_set(tostring(ResultType), 10),
-        FailureApplications = make_set(AppDisplayName, 10)
-      by UserPrincipalName, IPAddress
-    | where FailedAttempts >= FailureThreshold
-);
-let SuccessfulSignIns =
-    SigninLogs
-    | where TimeGenerated >= ago(Lookback)
-    | where ResultType == 0
-    | project
-        UserPrincipalName,
-        IPAddress,
-        SuccessTime = TimeGenerated,
-        SuccessApplication = AppDisplayName,
-        Location = tostring(LocationDetails),
-        Device = tostring(DeviceDetail);
-FailedSignIns
-| join kind=inner SuccessfulSignIns on UserPrincipalName, IPAddress
-| where SuccessTime between (LastFailure .. (LastFailure + SuccessWindow))
-| extend MinutesFromLastFailure = datetime_diff("minute", SuccessTime, LastFailure)
-| project
-    UserPrincipalName,
-    IPAddress,
-    FailedAttempts,
-    FirstFailure,
-    LastFailure,
-    SuccessTime,
-    MinutesFromLastFailure,
-    FailureResultTypes,
-    FailureApplications,
-    SuccessApplication,
-    Location,
-    Device
-| order by FailedAttempts desc, SuccessTime desc
-
 TimeGenerated,UserPrincipalName,IPAddress,ResultType,ResultDescription,Location,AppDisplayName,ClientAppUsed,DeviceDetail
 2026-07-28T08:00:11Z,analyst@contoso.example,203.0.113.77,50126,Invalid username or password,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
 2026-07-28T08:01:03Z,analyst@contoso.example,203.0.113.77,50126,Invalid username or password,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
@@ -57,5 +9,3 @@ TimeGenerated,UserPrincipalName,IPAddress,ResultType,ResultDescription,Location,
 2026-07-28T08:08:06Z,analyst@contoso.example,203.0.113.77,50126,Invalid username or password,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
 2026-07-28T08:09:24Z,analyst@contoso.example,203.0.113.77,0,Success,Johannesburg ZA,Microsoft 365,Browser,Unmanaged Windows device
 2026-07-28T08:20:09Z,analyst@contoso.example,198.51.100.24,0,Success,Cape Town ZA,Microsoft 365,Mobile Apps and Desktop clients,Managed iOS device
-
-

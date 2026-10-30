@@ -2,21 +2,21 @@
 
 A practical portfolio of security incidents demonstrating alert triage, KQL analysis, evidence handling, incident classification, MITRE ATT&CK mapping and response recommendations.
 
-This repository presents my investigation process: establish the facts, test competing explanations, document decisions and recommend proportionate action. All evidence is synthetic and safe to publish.
+This repository presents my investigation process: establish the facts, test competing explanations, document decisions and recommend proportionate action. All cases, names and evidence are synthetic practice scenarios and are safe to publish.
 
 ## Author
 
 **Mosa Mofokeng**  
-Emerging Cybersecurity proffesional focused on SOC operations, threat detection, incident response, Microsoft Sentinel and governance, risk and compliance.
+Emerging Cybersecurity professional focused on SOC operations, threat detection, incident response, Microsoft Sentinel and governance, risk and compliance.
 
 - GitHub: [Sasa021](https://github.com/Sasa021)
-- LinkedIn: [www.linkedin.com/in/mosa-m-159919264]
+- LinkedIn: [www.linkedin.com/in/mosa-m-159919264](https://www.linkedin.com/in/mosa-m-159919264)
 
 ## Casebook
 
 | Case | Scenario | Status | Core capabilities |
 |---|---|---|---|
-|[01]|(case-01-brute-force/investigation.md) | Password spray followed by a successful sign-in | Complete | KQL, identity analysis, incident response, access control |
+| [01](case-01-brute-force/investigation.md) | Password spray followed by a successful sign-in | Complete | KQL, identity analysis, incident response, access control |
 | 02 | Phishing email investigation | Planned | Header analysis, IOC extraction, user protection |
 | 03 | Suspicious PowerShell activity | Planned | Process analysis, endpoint response, ATT&CK mapping |
 | 04 | Impossible-travel alert | Planned | Identity investigation, false-positive analysis, account remediation |
@@ -56,7 +56,7 @@ Key outputs:
 
 ## Responsible-use statement
 
-This is a defensive portfolio project. Names, domains, addresses, identifiers and events are mostly fictional. The IP ranges use documentation only address space. No credentials, live targets, customer information or confidential employer data are included.
+This is a defensive portfolio project. All cases, names and evidence are synthetic practice scenarios. The IP ranges use documentation only address space. No credentials, live targets, customer information or confidential employer data are included.
 
 ## Disclaimer
 
